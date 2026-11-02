@@ -1,0 +1,23 @@
+{
+ "MAE": 41.668251037597656,
+ "RMSE": 187.25396728515625,
+ "WAPE": 0.07725340127944946,
+ "MAPE": 11.651294708251953,
+ "MASE": 0.9825613498687744,
+ "infer_s": 0.9483227949999673,
+ "MASE_xmas": 1.70378839969635,
+ "MAE_xmas": 78.42486572265625,
+ "family": "MLP",
+ "L": 168,
+ "strategy": "multi-salida",
+ "covariates": "calendario",
+ "params_total": 1147928,
+ "params_trainable": 1147928,
+ "train_s": 381.94342354000014,
+ "hardware": "CPU (2 n\u00facleos, x86_64)",
+ "impl": "PyTorch (propio)",
+ "best_val_MASE": 0.923695981502533,
+ "name": "MLP",
+ "H": 24,
+ "tag": ""
+}

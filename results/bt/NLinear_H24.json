@@ -1,0 +1,23 @@
+{
+ "MAE": 39.72792053222656,
+ "RMSE": 189.97064208984375,
+ "WAPE": 0.07365600019693375,
+ "MAPE": 11.611480712890625,
+ "MASE": 0.958467423915863,
+ "infer_s": 0.8018314159999136,
+ "MASE_xmas": 2.009152412414551,
+ "MAE_xmas": 91.37452697753906,
+ "family": "Lineal",
+ "L": 168,
+ "strategy": "multi-salida",
+ "covariates": "no",
+ "params_total": 4056,
+ "params_trainable": 4056,
+ "train_s": 63.90344263799989,
+ "hardware": "CPU (2 n\u00facleos, x86_64)",
+ "impl": "PyTorch (propio)",
+ "best_val_MASE": 0.874500036239624,
+ "name": "NLinear",
+ "H": 24,
+ "tag": ""
+}

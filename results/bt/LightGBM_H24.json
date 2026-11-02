@@ -1,0 +1,23 @@
+{
+ "MAE": 41.81245040893555,
+ "RMSE": 185.62599182128906,
+ "WAPE": 0.07752074301242828,
+ "MAPE": 12.1187162399292,
+ "MASE": 1.0221168994903564,
+ "infer_s": 12.638521803000003,
+ "MASE_xmas": 1.9339594841003418,
+ "MAE_xmas": 81.21444702148438,
+ "family": "\u00c1rboles",
+ "L": 168,
+ "strategy": "recursiva",
+ "covariates": "calendario",
+ "params_total": 261,
+ "params_trainable": 261,
+ "train_s": 160.13229323999997,
+ "hardware": "CPU (2 n\u00facleos, x86_64)",
+ "impl": "LightGBM",
+ "note": "724000 filas, 261 \u00e1rboles",
+ "name": "LightGBM",
+ "H": 24,
+ "tag": ""
+}

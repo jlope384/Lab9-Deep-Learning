@@ -1,0 +1,23 @@
+{
+ "MAE": 70.1084213256836,
+ "RMSE": 241.49241638183594,
+ "WAPE": 0.12998178601264954,
+ "MAPE": 21.747861862182617,
+ "MASE": 1.7222535610198975,
+ "infer_s": 15.11417897299998,
+ "MASE_xmas": 2.593820571899414,
+ "MAE_xmas": 105.86322021484375,
+ "family": "Encoder-decoder",
+ "L": 168,
+ "strategy": "encoder-decoder",
+ "covariates": "calendario (decoder)",
+ "params_total": 38209,
+ "params_trainable": 38209,
+ "train_s": 286.40275091600006,
+ "hardware": "CPU (2 n\u00facleos, x86_64)",
+ "impl": "PyTorch (propio)",
+ "best_val_MASE": 1.7185184955596924,
+ "name": "Seq2Seq-LSTM",
+ "H": 24,
+ "tag": ""
+}

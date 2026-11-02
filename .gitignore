@@ -1,0 +1,15 @@
+data/*.zip
+data/*.txt
+data/*.parquet
+__pycache__/
+lightning_logs/
+*.ckpt
+.ipynb_checkpoints/
+logs_*.txt
+chain.log
+chain_done.txt
+results/predictions/
+data/
+q*.sh
+q*.log
+*_done.txt

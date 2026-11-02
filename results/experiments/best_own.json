@@ -1,0 +1,15 @@
+{
+ "name": "NLinear",
+ "arch": "NLinear",
+ "kw": {
+  "L": 168,
+  "norm": "series",
+  "lr": 0.003,
+  "batch_size": 256,
+  "epochs": 9,
+  "samples_per_epoch": 40000,
+  "patience": 3
+ },
+ "best_val_MASE": 0.874500036239624,
+ "best_epoch": 6
+}

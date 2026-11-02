@@ -1,0 +1,22 @@
+{
+ "MAE": 176.3529052734375,
+ "RMSE": 525.9143676757812,
+ "WAPE": 0.3275461494922638,
+ "MAPE": 39.725433349609375,
+ "MASE": 4.3112688064575195,
+ "infer_s": 2.018227212000056,
+ "MASE_xmas": 4.483555793762207,
+ "MAE_xmas": 180.55467224121094,
+ "family": "Baseline",
+ "L": 24,
+ "strategy": "local (directo)",
+ "covariates": "no",
+ "params_total": 0,
+ "params_trainable": 0,
+ "train_s": 0.0,
+ "hardware": "CPU (2 n\u00facleos, x86_64)",
+ "impl": "StatsForecast",
+ "name": "Naive",
+ "H": 168,
+ "tag": ""
+}

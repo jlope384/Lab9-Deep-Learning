@@ -1,0 +1,23 @@
+{
+ "MAE": 72.15848541259766,
+ "RMSE": 243.28514099121094,
+ "WAPE": 0.13378262519836426,
+ "MAPE": 21.53242301940918,
+ "MASE": 1.8336392641067505,
+ "infer_s": 26.002351837999868,
+ "MASE_xmas": 2.614657402038574,
+ "MAE_xmas": 103.55772399902344,
+ "family": "Recurrente",
+ "L": 168,
+ "strategy": "autorregresiva",
+ "covariates": "calendario",
+ "params_total": 19265,
+ "params_trainable": 19265,
+ "train_s": 293.8786129289997,
+ "hardware": "CPU (2 n\u00facleos, x86_64)",
+ "impl": "PyTorch (propio)",
+ "best_val_MASE": 1.9057388305664062,
+ "name": "LSTM-AR",
+ "H": 24,
+ "tag": ""
+}

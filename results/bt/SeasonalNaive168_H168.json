@@ -1,0 +1,22 @@
+{
+ "MAE": 43.52055358886719,
+ "RMSE": 195.89244079589844,
+ "WAPE": 0.08083217591047287,
+ "MAPE": 11.171638488769531,
+ "MASE": 1.1536279916763306,
+ "infer_s": 2.259536544000184,
+ "MASE_xmas": 1.7159836292266846,
+ "MAE_xmas": 67.79930114746094,
+ "family": "Baseline",
+ "L": 336,
+ "strategy": "local (directo)",
+ "covariates": "no",
+ "params_total": 0,
+ "params_trainable": 0,
+ "train_s": 0.0,
+ "hardware": "CPU (2 n\u00facleos, x86_64)",
+ "impl": "StatsForecast",
+ "name": "SeasonalNaive168",
+ "H": 168,
+ "tag": ""
+}

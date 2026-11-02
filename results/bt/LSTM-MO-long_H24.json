@@ -1,0 +1,23 @@
+{
+ "MAE": 53.614654541015625,
+ "RMSE": 213.29978942871094,
+ "WAPE": 0.09940215945243835,
+ "MAPE": 15.64062213897705,
+ "MASE": 1.2487883567810059,
+ "infer_s": 2.069668384000124,
+ "MASE_xmas": 2.144272804260254,
+ "MAE_xmas": 94.54338073730469,
+ "family": "Recurrente",
+ "L": 168,
+ "strategy": "multi-salida",
+ "covariates": "calendario",
+ "params_total": 37208,
+ "params_trainable": 37208,
+ "train_s": 289.60470367900007,
+ "hardware": "CPU (2 n\u00facleos, x86_64)",
+ "impl": "PyTorch (propio)",
+ "best_val_MASE": 1.2311712503433228,
+ "name": "LSTM-MO-long",
+ "H": 24,
+ "tag": ""
+}

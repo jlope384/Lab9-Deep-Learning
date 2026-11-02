@@ -1,0 +1,99 @@
+{
+ "scale_all": {
+  "min": 4.331,
+  "50%": 148.133,
+  "max": 48817.773
+ },
+ "scale_sel": {
+  "min": 8.282,
+  "50%": 153.511,
+  "max": 11479.638
+ },
+ "n_clients_filter": 317,
+ "n_clients_used": 100,
+ "hours_per_series": 26304,
+ "obs_panel_used": 2630400,
+ "obs_panel_filtered": 8338368,
+ "holidays": {
+  "2012-01-01": "Ano Novo",
+  "2012-04-06": "Sexta-feira Santa",
+  "2012-04-08": "P\u00e1scoa",
+  "2012-04-25": "Dia da Liberdade",
+  "2012-05-01": "Dia do Trabalhador",
+  "2012-06-07": "Corpo de Deus",
+  "2012-06-10": "Dia de Portugal, de Cam\u00f5es e das Comunidades Portuguesas",
+  "2012-08-15": "Assun\u00e7\u00e3o de Nossa Senhora",
+  "2012-10-05": "Implanta\u00e7\u00e3o da Rep\u00fablica",
+  "2012-11-01": "Dia de Todos os Santos",
+  "2012-12-01": "Restaura\u00e7\u00e3o da Independ\u00eancia",
+  "2012-12-08": "Imaculada Concei\u00e7\u00e3o",
+  "2012-12-25": "Dia de Natal",
+  "2013-01-01": "Ano Novo",
+  "2013-03-29": "Sexta-feira Santa",
+  "2013-03-31": "P\u00e1scoa",
+  "2013-04-25": "Dia da Liberdade",
+  "2013-05-01": "Dia do Trabalhador",
+  "2013-06-10": "Dia de Portugal, de Cam\u00f5es e das Comunidades Portuguesas",
+  "2013-08-15": "Assun\u00e7\u00e3o de Nossa Senhora",
+  "2013-12-08": "Imaculada Concei\u00e7\u00e3o",
+  "2013-12-25": "Dia de Natal",
+  "2014-01-01": "Ano Novo",
+  "2014-04-18": "Sexta-feira Santa",
+  "2014-04-20": "P\u00e1scoa",
+  "2014-04-25": "Dia da Liberdade",
+  "2014-05-01": "Dia do Trabalhador",
+  "2014-06-10": "Dia de Portugal, de Cam\u00f5es e das Comunidades Portuguesas",
+  "2014-08-15": "Assun\u00e7\u00e3o de Nossa Senhora",
+  "2014-12-08": "Imaculada Concei\u00e7\u00e3o",
+  "2014-12-25": "Dia de Natal"
+ },
+ "xmas_ratio_vs_same_weekday_prev4w": {
+  "2012-12-24": 0.961,
+  "2012-12-25": 0.741,
+  "2012-12-31": 0.997,
+  "2013-01-01": 0.77,
+  "2013-12-24": 0.984,
+  "2013-12-25": 0.76,
+  "2013-12-31": 1.017,
+  "2014-01-01": 0.781,
+  "2014-12-24": 0.978,
+  "2014-12-25": 0.671,
+  "2014-12-31": 0.966
+ },
+ "windows": {
+  "train": {
+   "per_series": 21697,
+   "panel": 2169700
+  },
+  "val": {
+   "per_series": 2185,
+   "panel": 218500
+  },
+  "test": {
+   "per_series": 2185,
+   "panel": 218500
+  },
+  "test_daily_origins": 92,
+  "val_daily_origins": 92
+ },
+ "tensor_shapes": {
+  "x": [
+   168,
+   9
+  ],
+  "xf": [
+   24,
+   8
+  ],
+  "y": [
+   24
+  ]
+ },
+ "leakage_audit": [
+  "1) Split temporal: objetivos train hasta 2014-06-30 23:00:00, val 2014-07-01 00:00:00..2014-09-30 23:00:00, test desde 2014-10-01 00:00:00. Ning\u00fan objetivo cruza de bloque. El muestreo aleatorio (shuffle) ocurre SOLO dentro de las ventanas de entrenamiento.",
+  "2) Escalado: mu/sd por serie calculados con Y[:, :val_pos] (hasta 2014-06-30 23:00). Multiplicar val+test por 10 no cambia los estad\u00edsticos. Diferencia media |mu_train - mu_full| = 5.17 kWh (lo que se habr\u00eda filtrado).",
+  "3) Early stopping: train_model() eval\u00faa en 92 or\u00edgenes de validaci\u00f3n, \u00faltimo objetivo 2014-09-30 23:00:00 < 2014-10-01 00:00. La prueba solo se toca en backtest(split='test') tras entrenar.",
+  "4) Alineaci\u00f3n: XF = calendario de [t, t+H) (determin\u00edstico, conocido a futuro); la entrada X usa [t-L, t). Poner y[t:] = 999 no altera X (ni las filas de rezagos de LightGBM): toda entrada es calculable a las 00:00 del d\u00eda pronosticado con datos hasta las 23:00 del d\u00eda previo.",
+  "Extra) backtest() pasa Y[:, :o] al modelo; para librer\u00edas se verifica que cutoff == o-1."
+ ]
+}

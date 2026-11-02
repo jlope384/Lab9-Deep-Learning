@@ -1,0 +1,22 @@
+{
+ "MAE": 41.46591567993164,
+ "RMSE": 190.51206970214844,
+ "WAPE": 0.07687826454639435,
+ "MAPE": 11.90903377532959,
+ "MASE": 1.0440807342529297,
+ "infer_s": 1662.8162702950003,
+ "MASE_xmas": 2.052656412124634,
+ "MAE_xmas": 94.30547332763672,
+ "family": "Baseline",
+ "L": 336,
+ "strategy": "local (directo)",
+ "covariates": "no",
+ "params_total": 0,
+ "params_trainable": 0,
+ "train_s": 0.0,
+ "hardware": "CPU (2 n\u00facleos, x86_64)",
+ "impl": "StatsForecast",
+ "name": "MSTL",
+ "H": 24,
+ "tag": ""
+}

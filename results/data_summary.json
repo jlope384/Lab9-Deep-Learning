@@ -1,0 +1,31 @@
+{
+ "raw_shape": [
+  140256,
+  370
+ ],
+ "n_clients_after_filter": 317,
+ "n_clients_used": 100,
+ "hours_per_series": 26304,
+ "panel_obs_all": 8338368,
+ "panel_obs_used": 2630400,
+ "dst_log": [
+  "2012-03-25 01:00:00: hora en cero (suma panel=4287.1) -> interpolada",
+  "2012-10-28 01:00:00: hora doble (ratio vs hora previa=1.63) -> /2",
+  "2013-03-31 01:00:00: hora en cero (suma panel=4369.8) -> interpolada",
+  "2013-10-27 01:00:00: hora doble (ratio vs hora previa=1.54) -> /2",
+  "2014-03-30 01:00:00: hora en cero (suma panel=454.5) -> interpolada",
+  "2014-10-26 01:00:00: hora doble (ratio vs hora previa=1.70) -> /2"
+ ],
+ "excluded_reasons": {
+  "max_zero_run_days": {
+   "count": 53.0,
+   "mean": 533.0377358490566,
+   "std": 250.00561241885924,
+   "min": 6.0,
+   "25%": 320.0,
+   "50%": 613.0,
+   "75%": 744.0,
+   "max": 929.0
+  }
+ }
+}

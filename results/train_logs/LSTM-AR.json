@@ -1,0 +1,58 @@
+{
+ "arch": "LSTM_AR",
+ "L": 168,
+ "H": 24,
+ "norm": "series",
+ "hist_months": 30,
+ "lr": 0.003,
+ "batch_size": 256,
+ "epochs_run": 4,
+ "samples_per_epoch": 8192,
+ "seed": 42,
+ "model_kw": {
+  "hidden": 64
+ },
+ "params_total": 19265,
+ "params_trainable": 19265,
+ "train_s": 293.8786129289997,
+ "epoch_s_mean": 49.280094265,
+ "best_val_MASE": 1.9057388305664062,
+ "best_epoch": 4,
+ "gpu_peak_MB": null,
+ "cpu_peak_rss_MB": 900.53515625,
+ "hardware": "CPU (2 n\u00facleos, x86_64)",
+ "history": [
+  {
+   "epoch": 1,
+   "train_loss": 0.5519713182002306,
+   "val_loss": 0.6374633312225342,
+   "val_MAE": 111.55388641357422,
+   "val_MASE": 2.5092694759368896,
+   "epoch_s": 54.810666225000205
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.2989483866840601,
+   "val_loss": 0.7126691341400146,
+   "val_MAE": 135.88876342773438,
+   "val_MASE": 3.0230939388275146,
+   "epoch_s": 45.38522698099996
+  },
+  {
+   "epoch": 3,
+   "train_loss": 0.24388509476557374,
+   "val_loss": 0.5255035161972046,
+   "val_MAE": 83.25641632080078,
+   "val_MASE": 1.9712976217269897,
+   "epoch_s": 48.80396840200001
+  },
+  {
+   "epoch": 4,
+   "train_loss": 0.23363613663241267,
+   "val_loss": 0.511847734451294,
+   "val_MAE": 78.04100799560547,
+   "val_MASE": 1.9057388305664062,
+   "epoch_s": 48.120515451999836
+  }
+ ]
+}
